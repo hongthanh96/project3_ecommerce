@@ -91,6 +91,11 @@ li {
     color: rgb(71, 66, 66);
 }
 
+.container_left_middle a:hover {
+    color: rgb(19, 202, 117);
+    font-weight: 700;
+}
+
 .container_left_bottom {
     position: absolute;
     bottom: 0;
