@@ -24,10 +24,15 @@ li {
     list-style: none;
 }
 
+input {
+    border: none;
+    outline-style: none;
+}
+
 .container {
     width: 90%;
     display: flex;
-    margin: 0 5%;
+    margin: 3% 5%;
 }
 
 .container_left {
@@ -46,6 +51,30 @@ li {
     border-bottom: 2px solid gray;
     font-size: 20px;
     font-weight: 800;
+    position: relative;
+}
+
+.prev_next {
+    position: absolute;
+    right: 55px;
+    bottom: 5px;
+}
+
+.prev_next button {
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    background-color: rgb(28, 158, 78);
+    cursor: pointer;
+}
+
+.prev_next button:hover {
+    background-color: gray;
+}
+
+.prev_next i {
+    font-size: 25px;
+    color: white;
 }
 
 .container_right_header span {
@@ -79,19 +108,22 @@ li {
 }
 
 .container_left_middle {
+    width: 100%;
     position: absolute;
-    left: 15%;
+    /* left: 15%; */
 }
 
 .container_left_middle li {
-    margin-top: 17%;
+    width: 100%;
+    padding: 10px 20px;
+    /* margin-top: 17%; */
 }
 
-.container_left_middle a {
+.select_title {
     color: rgb(71, 66, 66);
 }
 
-.container_left_middle a:hover {
+.select_title:hover {
     color: rgb(19, 202, 117);
     font-weight: 700;
 }
@@ -102,7 +134,7 @@ li {
 }
 
 .des_product {
-    width: 20%;
+    width: 21%;
     display: flex;
     flex-direction: column;
     margin: 2%;
@@ -196,11 +228,45 @@ li {
     font-size: 20px;
     font-weight: 800;
     border-bottom: 2px solid gray;
+    position: relative;
 }
 
 .select_product1_top span {
     color: gray;
     font-weight: 1000;
+}
+
+.list_products1 {
+    display: flex;
+    position: relative;
+}
+
+.btn_prev1 button,
+.btn_next1 button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.btn_prev1 i,
+.btn_next1 i {
+    font-size: 35px;
+    color: gray;
+}
+
+.btn_prev1 i:hover,
+.btn_next1 i:hover {
+    color: turquoise;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.btn_prev1 {
+    margin: auto;
+}
+
+.btn_next1 {
+    margin: auto;
 }
 
 .select_product1_bottom {
@@ -211,7 +277,7 @@ li {
 }
 
 .des_product1 {
-    width: 22%;
+    width: 23%;
     display: flex;
     flex-direction: column;
     margin: 1%;
@@ -222,7 +288,7 @@ li {
 }
 
 .des_product1:hover {
-    transform: scale(1.2);
+    transform: scale(1.02);
 }
 
 .des_product1 span {
